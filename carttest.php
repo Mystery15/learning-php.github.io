@@ -44,5 +44,24 @@
             }
         }
     ?>
+    <fieldset style="width: 300px;">
+        <legend>Your Shopping Cart</legend>
+        <?php
+            if (!isset($_SESSION['cart'])) {
+                $_SESSION['cart'] = array();
+                echo "Your shopping cart is empty\n";
+            } else {
+                echo "<form action=\"carttest.php\" method=\"post\">\n";
+                echo "<table>\n";
+                echo "<tr><th>Item</th><th>Quantity</th><th/></tr>\n";
+                foreach($_SESSION['cart'] as $key => $value) {
+                    echo "<tr><td>$key</td><td>$value</td>\n";
+                    echo "<td><input type=\"submit\" name=\"$key\" value=\"Remove\"></td></tr>\n";
+                }
+                echo "</table>\n";
+                echo "</form>\n";
+            }
+        ?>
+    </fieldset>
 </body>
 </html>

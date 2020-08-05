@@ -37,6 +37,7 @@
 <a href="removingcookies.php">PHP || Removing Cookies</a><br><br>
 <a href="sessiontest1.php">PHP || Testing Session Cookies</a><br><br>
 <a href="carttest.php">PHP || Shopping Cart Test</a><br><br>
+<a href="apptest.php">PHP || App Test</a><br><br>
 
 
     <!-- <div class="dummy-form">
