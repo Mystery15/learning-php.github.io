@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Data with a Form</title>
+    <style>
+        input, textarea{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+        <h1>Please fill the form to test Data Processing</h1>
+    <form name="myform" action="formtest.php" method="POST">
+        <fieldset>
+            <legend>My test form</legend>
+            <label>First name</label>
+            <input type="text" name="fname" size="40"><br>
+            <label>Last name</label>
+            <input type="text" name="lname" size="40"><br>
+        <fieldset>
+            <legend>Please select your favourite sport</legend>
+            <input type="radio" name="sport" value="baseball">Baseball<br>
+            <input type="radio" name="sport" value="football">Football<br>
+            <input type="radio" name="sport" value="hockey">Hockey<br>
+            <input type="radio" name="sport" value="soccer">Soccer<br>
+        </fieldset>
+            <label>Please type your essay</label>
+            <textarea name="essay" cols="50" rows="10"></textarea><br>
+            <input type="submit" value="Submit your form">
+        </fieldset>
+    </form>
+</body>
+</html>

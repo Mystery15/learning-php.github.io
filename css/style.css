@@ -1,0 +1,20 @@
+.dummy-form
+{
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 10px;
+}
+.form-img
+{
+    height: auto;
+    width: 200px;
+}
+.my-form
+{
+    border: 2px solid magenta;
+    width: 200px;
+}
+.dummy-in
+{
+    margin-left: 10px;
+}
